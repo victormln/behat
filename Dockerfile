@@ -1,5 +1,5 @@
 ARG FROM
-FROM ${FROM}
+FROM alpine:3.9
 
 MAINTAINER Leonid Makarov <leonid.makarov@ffwagency.com>
 
