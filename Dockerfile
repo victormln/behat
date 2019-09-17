@@ -21,7 +21,6 @@ RUN apk add --no-cache \
     php7-dom \
     php7-phar \
     php7-mbstring \
-    php7-simplexml \
     php7-ctype \
     openssl \
     && rm -rf /var/cache/apk/*
