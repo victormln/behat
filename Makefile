@@ -4,8 +4,8 @@ FROM ?= alpine:3.9
 VERSION ?= dev
 TAG ?= $(VERSION)
 
-REPO ?= docksal/behat
-NAME = docksal-behat
+REPO ?= victormln/behat
+NAME = victormln-behat
 
 .PHONY: build test push shell run start stop logs clean release
 

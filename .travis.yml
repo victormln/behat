@@ -4,7 +4,7 @@ language: minimal
 
 env:
   global:
-    - REPO=docksal/behat
+    - REPO=victormln/behat
 
 script:
   - make

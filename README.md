@@ -17,14 +17,14 @@ Use this image as if you were using a binary.
 Working directory is expected to be mounted at `/src` in the container.
 
 ```
-$ docker run --rm -v $(pwd):/src docksal/behat --version
+$ docker run --rm -v $(pwd):/src victormln/behat --version
 behat version 3.1.0
 ```
 
 You can also add a shell alias (in `.bashrc`, `.zshrc`, etc.) for convenience.
 
 ```
-alias behat='docker run --rm -v $(pwd):/src docksal/behat --colors "$@"'
+alias behat='docker run --rm -v $(pwd):/src victormln/behat --colors "$@"'
 ```
 
 Restart your shell or open a new one, then
@@ -48,12 +48,12 @@ Features:
 ### Using sample setup
 
 ```
-git clone https://github.com/docksal/behat.git docksal-behat
+git clone https://github.com/victormln/behat.git docksal-behat
 cd docksal-behat/example
 behat features/blackbox.feature
 ```
 
-Note: if you did not add the shell alias, replace `behat` with `docker run --rm -v $(pwd):/src docksal/behat --colors`.
+Note: if you did not add the shell alias, replace `behat` with `docker run --rm -v $(pwd):/src victormln/behat --colors`.
 
 
 ### Behat with Selenium
@@ -125,5 +125,5 @@ You can configure the folder that the screenshots are saved into through the `be
 The following command will start a bash session in the container.
 
 ```
-docker run --rm -v $(pwd):/src -it --entrypoint=bash docksal/behat
+docker run --rm -v $(pwd):/src -it --entrypoint=bash victormln/behat
 ```
